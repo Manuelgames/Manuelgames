@@ -5,7 +5,7 @@
 }
 html{
     font-size: 62.5%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #222324;
 }
 body{
@@ -25,14 +25,14 @@ header{
     height: 100px;  
 }
 
-main{
-    display: flex;
+.main{
+    display: grid;    
     width: 100%;
     height: auto;
     justify-content: center;
 }
 
-
+/*CONTENEDOR DE NAVEGACION*/
 .header-container-nav{
     display: flex;
     height: 70px;
@@ -41,19 +41,62 @@ main{
     margin-top: 10px;
 }
 
+
+
+
+/*CONTENEDOR IZQUIERDO DE NAVEGACION*/
 .container-nav-left{
     display: flex;
-    width: 200px;
+    width: 130px;
     justify-content:space-between;
 }
+.container-nav-left p{
+    font-size: 3rem;
+}
+/*ocultamos contenedor por responsive*/
+/*contenedor para pc*/
+.nav-right-li {
+    display: none;
+}
 
+
+
+/*CONTENEDOR CENTRO DE NAVEGACION*/
 .container-nav-center{
     display: flex;
     width: 100px;
 }
-
+/*CONTENEDOR DERECHO DE NAVEGACION*/
+/*Contenedor para tablet y pc*/
 .container-nav-rigth{
     display: flex;
     width: 100px;
+    justify-content: flex-end;
+}
+/*img solo para mobile*/
+.nav-list-menu{
+    height: 50px;
+    width: 50px;
+}
+.nav-list-menu a img{
+    width: 40px;
+    height: 40px;
+}
+/*Solo para pc y tablet*/
+.nav-list-contacto{
+    display: none;
 }
 
+/*Encabezado*/
+.main-encabezado-titlo{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    padding-right:100px ;
+    
+}
+.main-encabezado-titlo h1 {
+    font-size: 2.6rem;
+    color: aliceblue;
+}

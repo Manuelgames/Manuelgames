@@ -5,8 +5,15 @@
 }
 html{
     font-size: 62.5%;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #222324;
+}
+h1, h2, p, a{
+    font-weight: lighter;
+    color: aliceblue;
+}
+p{
+    font-size: 1.6rem;
 }
 body{
     width: 100%;
@@ -14,31 +21,46 @@ body{
 }
 a{
     text-decoration: none;
-    color: aliceblue;
 }
 ul{
     list-style: none;
 }
 
 header{
+    display: grid;
     width: 100%;
     height: 100px;  
+    justify-content: center;
 }
 
-.main{
-    display: grid;    
+main{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    display: grid;
     width: 100%;
     height: auto;
     justify-content: center;
 }
 
+.linea-divisora{
+    list-style: none;
+}
 /*CONTENEDOR DE NAVEGACION*/
 .header-container-nav{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
     height: 70px;
     font-size: 1.7rem;
-    justify-content: space-around;
-    margin-top: 10px;
+    padding: 0 42px;
 }
 
 
@@ -61,17 +83,12 @@ header{
 
 
 
-/*CONTENEDOR CENTRO DE NAVEGACION*/
-.container-nav-center{
-    display: flex;
-    width: 100px;
-}
 /*CONTENEDOR DERECHO DE NAVEGACION*/
 /*Contenedor para tablet y pc*/
 .container-nav-rigth{
     display: flex;
-    width: 100px;
     justify-content: flex-end;
+    width: 100px;
 }
 /*img solo para mobile*/
 .nav-list-menu{
@@ -87,16 +104,64 @@ header{
     display: none;
 }
 
+/*main*/
 /*Encabezado*/
-.main-encabezado-titlo{
+.main-encabezado-introduccion{
     display: flex;
-    height: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
     width: 100%;
-    justify-content: center;
-    padding-right:100px ;
-    
+    margin-bottom: 50px;
 }
-.main-encabezado-titlo h1 {
-    font-size: 2.6rem;
-    color: aliceblue;
+.encabezado-titulo{
+    width: 100%;
+    font-size: 3.0rem;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+.main-encabezado-introduccion p{
+    width: 100%;
+    color: rgb(121, 124, 126);
+}
+
+.main-cuerpo-perfil{
+    margin-top: 10px;
+    height: auto;
+    justify-content: center;
+}
+.main-cuerpo-perfil img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.linea-divisora{
+    height: 1px;
+    width: 340px;
+    margin: 19px auto 19px auto;
+    background-color: aliceblue;
+}
+.main-cuerpo-filosofia{
+    width: 90%;
+    height: 180px;
+    border-top: 3px solid aliceblue;
+    padding-top: 10px;
+}
+.main-cuerpo-filosofia h2{
+    font-size: 3rem;
+    padding-left: 18px;
+}
+.main-cuerpo-filosofia p{
+    padding: 7px 18px 7px 18px;
+}
+
+.footer-social-redes{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+
+.footer-social-redes img{
+    width: 22px;
+    height: 22px;
 }
